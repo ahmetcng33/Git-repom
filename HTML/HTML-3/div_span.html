@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-Span</title>
+    <style>
+        .div2{
+            border: 2px solid red;
+            width: 50%;
+            margin: auto;
+
+        }
+
+        .span2{
+            color: red;
+        }
+
+        .span3{
+            color: purple;
+            background-color: black;
+        }
+
+        .span4{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- div toplu alan için  -->
+    <!-- span belli ufak yerler için paragrafın yarısını boyamak gibi -->
+    
+    <div class="div1">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil dolor iusto facere itaque ullam dicta at ab laudantium fugiat quibusdam perspiciatis quisquam, numquam, eligendi accusantium quo, quis nesciunt delectus.
+        </p>
+    </div>
+
+    <div class="div2">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil dolor iusto facere itaque ullam dicta at ab laudantium , <span class="span2">fugiat quibusdam perspiciatis quisquam eligendi accusantium quo, quis nesciunt delectus.</span>
+        </p>
+    </div>
+
+    <div class="div3">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur  <span class="span3">adipisicing elit. Placeat nihil dolor iusto facere</span>  itaque ullam dicta at ab laudantium <span class="span4">fugiat quibusdam perspiciatis quisquam,</span>  numquam, eligendi accusantium quo, quis nesciunt delectus.
+        </p>
+    </div>
+    
+</body>
+</html>

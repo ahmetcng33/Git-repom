@@ -29,7 +29,7 @@ else{
 
 
 
-// ------------------ Second Solution Switch Case --------------------//
+// ------------------ Second Solution 4 Operations Calculator With Switch Case --------------------//
 
 let number1=+prompt("Enter your first number")
 let operator=prompt("Which math operation do you want to do? ex: +, *, /, -")
@@ -61,9 +61,60 @@ console.log(`${number1} ${operator} ${number2} = ${conclusion}`)
 
 // -------------------- Weakly Program ------------------------ //
 
-let day= toUpperCase(prompt("Enter the day you want to see"))
+let day= prompt("Enter the day you want to see").toLowerCase()
 
-console.log(day);
-// switch(day){
-//     case monday,tuesday,wednesday,thursday
-// }
+switch(day){
+    case "monday":
+        program= "In Class"
+        break;
+    
+    case "tuesday":
+        program = "In Class"
+        break;
+    case "wednesday":
+        program = "In Class"
+        break;
+
+    case "thursday":
+        program = "In Class"
+        break;
+
+    case "friday":
+        program = "Teamwork"
+        break;
+
+    case "saturday":
+        program = "InClass + Workshop"
+        break;
+    
+    case "sunday":
+        program = "Self-Study"
+        break;
+    default:
+        console.log("You entered wrong, please enter a day of the week")
+
+}
+
+console.log(`Your ${day} schedule ${program}`);
+
+
+// -----------------  Salary Increase  ----------------//
+
+let salary=+prompt("Enter your salary")
+
+if(salary<= 5000){
+    salary=Math.ceil(salary*1.5)
+    console.log(`You are so poor we give you a raise. Your new salary is ${salary}`)
+}else{
+    salary = salary*1.1
+    console.log("Your salary is good enough you don't get a raise ")
+}
+
+
+
+// -------------- Credit Card Inquiry --------------//
+
+let wage = +prompt("Enter your wage(maas)")
+let spent = +prompt("Enter your spending")
+
+wage >=spent ? alert("Kredi Verilebilir 🤑 ") : alert("Kredi Verilemez 🥺")

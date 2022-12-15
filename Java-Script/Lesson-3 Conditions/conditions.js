@@ -116,5 +116,6 @@ if(salary<= 5000){
 
 let wage = +prompt("Enter your wage(maas)")
 let spent = +prompt("Enter your spending")
+const asgari = 5000;
 
-wage >=spent ? alert("Kredi Verilebilir 🤑 ") : alert("Kredi Verilemez 🥺")
+(wage-spent)>=asgari ? alert("Kredi Verilebilir 🤑 ") : alert("Kredi Verilemez 🥺")

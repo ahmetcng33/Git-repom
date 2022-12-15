@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+}
+
+/******** LISTS ********/
+.languages{
+    /* madde imlerinin şeklini değiştirme  none | disc| circle|decimal etc.*/
+    list-style-type:circle;
+    /* madde imlerinin yerini belirler */
+    list-style-position: inside;
+    
+    list-style-image: linear-gradient();
+    
+}

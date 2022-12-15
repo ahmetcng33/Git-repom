@@ -1,0 +1,110 @@
+html {
+    /*? Default font-size 16px */
+    /* font-size: 20px; */
+    /* * default fontsize=20px */
+  }
+  
+  h1 {
+    /*? Degistirilmedigi surece h1'in buyuklugu default font-size'ın 2 katidir. 16x2 = 32px*/
+    color: red;
+    /* font-size: 50px; */
+  }
+  p.first {
+    /*? p'nin size default font-size a eşittir.; */
+    font-size: 30px;
+  }
+  
+  /***** UNİTS *****/
+
+  /** Mutlak olcu birimleri px, mm,cm,m, inch */
+  p.abs {
+    font-size: 20px;
+    font-size: 1cm;
+  }
+  
+  p.percent {
+    font-size: 200%;
+    /*? 16px * 2  = 32px  */
+  }
+
+  /* EM olcu biriminde bir html elemanının font size'i parentin font-size'ina göre oranlanır */
+
+  .div1{
+    /* Parentın (html) 1katına esittir (16px) */
+    font-size: 1em;
+  }
+
+  .div2{
+    font-size: 2em;  /* parentın (div1) font-size'nın 2 katı */
+  }
+  
+  .div3{
+    /* Parentın (div2) font-sizenin 3 katı 32px*3=96px */
+    font-size: 3em;
+  }
+
+
+  /* REM olcu biriminde bir html elemanınn font size'i root elemanının font-size ina göre oranlanır */
+
+  .div4{
+    font-size: 1rem;  /* 16px * 1 = 16px */
+  }
+
+  .div5{
+    font-size: 2rem;  /* 16px * 2 = 32px */
+  }
+
+  .div6{
+    font-size: 3rem;  /* 16px *3 = 48 px */
+  }
+
+  P.text-style{
+    font-style: italic; /* normal | oblique */
+    text-align: center; /* justify | left |right */
+    font-weight: 900;
+    /* font-weight: bold;
+    font-weight: bolder; */
+    /* font-variant: small-caps;  */
+    /* kücük harfler büyük yazıyor boyut küçük ama büyük yani ıjasdfkdsf bir tık gereksiz gibi */
+  }
+
+  p.text-style .edit{
+    font-style: oblique;
+    color: red;
+    text-decoration:line-through;
+  }
+
+  div.transformation p{
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize; /* ilk harfler büyük */
+    text-transform: lowercase;  /* hepsi küçük */
+    text-transform: uppercase;  /* hepsi büyük */
+    text-transform: none;       /* default değer */
+  }
+
+  div.transformation p.indent{
+    text-indent: 20px;  /* paragraf başından 20 px boşluk bırakmak */
+  }
+
+  .spacing{
+    line-height: 5; /* her iki satır arası boşluk*/
+    word-spacing: 10px; /* her iki kelime arası boşluk */
+    letter-spacing: 10px; /* her harf arasındaki boşluk */
+    font-weight:bold;
+    direction: rtl; /* sağdan yazmaya başlar en solda enter atar gibi düşünebilirsin */
+
+  }
+
+  .shadow h2{
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.5);
+    /* x ekseni - y ekseni - blur değeri - rengi */
+  }
+  
+  .shadow{
+    padding: 1rem;
+    margin-bottom: 5rem;   
+    background-color:antiquewhite;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }

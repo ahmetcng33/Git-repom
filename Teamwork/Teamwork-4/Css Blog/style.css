@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1{
+
+    border: 2px solid red;
+    width: 1000px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    display: inline-block;
+
+}
+
+.image{
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+    float: left;
+    
+}
+
+.title{
+    display: inline-block;
+    text-align: center;
+}
+
+.paragraf{
+    display: inline-block;
+    margin-left: 300px;
+    /* margin-bottom: 10px; */
+}
+
+.div3{
+    border: 2px solid blue;
+}

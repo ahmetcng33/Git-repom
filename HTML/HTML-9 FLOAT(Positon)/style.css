@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+
+.img-float{
+    width: 40%;
+    float: left;
+    margin-right: 0.8rem;
+}
+
+.par1{
+    border: 1px solid blue;
+}
+
+
+/** Float özelliğini(resimle yazıyı yan yana devam şeklinde yazdırmak) eski akisina getirmek için clear property'si kullanılır */
+.clearfix{
+    clear: both; /*? her iki yöndeki float akisini temizle*/
+}
+
+.box1{
+    background-color: aqua;
+    width: 40%;
+  
+}
+.box2{
+    background-color: magenta;
+    width: 30%;
+}
+.box3{
+    background-color: purple;
+    width: 10%;
+
+}
+
+.box{
+    float: left;
+    font-size: 2rem;
+}

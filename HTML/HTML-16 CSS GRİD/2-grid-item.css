@@ -23,6 +23,12 @@
     margin: 0.5rem;
 }
 
+.c10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .c6{
     /* yatay ortalama yapar */
     justify-self: center;
@@ -33,4 +39,33 @@
     /* dikey hızalamak yapar */
     height: 4rem;
     align-self: center;
+}
+
+.c4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: lightgreen;
+}
+
+.c8{
+
+    /* grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:3;
+    gird-row-end:5; */
+
+
+     /*!  grid-area: row_start / col_start / row_end / col_end */
+     grid-area: 3/2/5/4;
+     background-color: crimson;
+}
+
+.c8 iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c13{
+    grid-area: 5/2/span 2/ span 2;
 }

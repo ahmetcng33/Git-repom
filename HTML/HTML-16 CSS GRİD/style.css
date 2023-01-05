@@ -6,7 +6,11 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 300px 4rem 400px;
     grid-template-rows: 50vh 25vh 25vh;
+
+    /* grid seviyesinde yatay hizalama */
+    justify-content: center;
 }
 
 .content{
@@ -15,6 +19,8 @@
 }
 
 .content{
+    /* grid container icerisindeki item'lara Flex özelligi kazandirabilir */
+    /* böylece item'ların icerisindeki contetn'lerin yatay ve diket hızalaması yapılabilir */
     display: flex;
     justify-content: center;
     align-items: center;

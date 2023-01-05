@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 25vh repeat(3, calc(25vh - 0.5rem));
+    /* row-gap: 0.5rem; */
+    /* column-gap: 1rem; */
+    /* üsttekinin aynısı kısa kullanımı */
+    gap: 0.5rem 1rem;
+}
+
+.content{
+    background-color: beige;
+    border: 2px solid black;
+    /* itemlerin içindeki içeriği ortalamak için yapıyorz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.c6{
+    /* yatay ortalama yapar */
+    justify-self: center;
+    padding: 1rem;
+}
+
+.c11{
+    /* dikey hızalamak yapar */
+    height: 4rem;
+    align-self: center;
+}

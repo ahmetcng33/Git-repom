@@ -1,0 +1,33 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50vh 25vh 25vh;
+}
+
+.content{
+    background-color: aqua;
+    border: 1px solid red;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content7{
+    overflow: auto;
+}
+
+.content9{
+    background-image: url("https://cdn.pixabay.com/photo/2022/12/20/11/17/hiking-7667621_960_720.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover; 
+   
+}
